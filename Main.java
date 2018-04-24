@@ -20,8 +20,7 @@ public class Main {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		line1 = br.readLine();
-		while(line1 != null){
+		while((line1 = br.readLine()) != null){
 			line2 = br.readLine(); //reads too much here
 			System.out.print(line1);
 			
@@ -63,7 +62,6 @@ public class Main {
 					packets.add(p); //add to list
 				}//if
 			}//elif
-			line1 = br.readLine();
 		}//while
 
 		//print out packets
